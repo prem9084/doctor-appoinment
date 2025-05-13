@@ -29,6 +29,7 @@ const Login = () => {
           localStorage.setItem("atoken", data.token);
           setAtoken(data.token);
           toast.success(data.message);
+          navigate("/admin-dashboard");
         } else {
           toast.error(data.message);
         }
