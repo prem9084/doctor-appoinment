@@ -8,11 +8,14 @@ import adminRoute from "./routes/AdminRoute.js";
 import doctorRoute from "./routes/DoctorRoute.js";
 import userRoute from "./routes/UserRoutes.js";
 import connectCloudinary from "./config/cloudinary.js";
+import cors from "cors";
 const app = express();
 
 dotenv.config();
 Connnetdb();
 connectCloudinary();
+
+app.use(cors());
 
 app.use(express.json());
 app.use(cors());
