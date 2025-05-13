@@ -51,6 +51,19 @@ const Navbar = () => {
             style={{ backgroundColor: "#5f6FFF" }}
           />
         </NavLink>
+        <a
+          href="https://doctor-appoinment-admin.netlify.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <li className="py-1 px-10 border border-gray-500 rounded-full text-sm font-medium">
+            ADMIN
+          </li>
+          <hr
+            className="border-none outline-none h-0.5 w-3/5 m-auto hidden"
+            style={{ backgroundColor: "#5f6FFF" }}
+          />
+        </a>
       </ul>
       <div className="flex items-center gap-4">
         {token ? (
@@ -124,6 +137,19 @@ const Navbar = () => {
             <NavLink onClick={() => setShowMenu(false)} to="/contact">
               <p className="px-4 py-2 rounded-full inline-block">CONTACT</p>
             </NavLink>
+            <a
+              href="https://doctor-appoinment-admin.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <li className="py-1  text-sm font-medium rounded-full px-10 border border-gray-500">
+                ADMIN
+              </li>
+              <hr
+                className="border-none outline-none h-0.5 w-3/5 m-auto hidden"
+                style={{ backgroundColor: "#5f6FFF" }}
+              />
+            </a>
           </ul>
         </div>
       </div>
