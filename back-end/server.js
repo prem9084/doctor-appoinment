@@ -15,7 +15,7 @@ dotenv.config();
 Connnetdb();
 connectCloudinary();
 
-app.use(cors());
+
 
 app.use(express.json());
 app.use(cors());
